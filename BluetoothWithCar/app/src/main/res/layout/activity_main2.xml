@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/geri"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="165dp"
+        android:onClick="geri"
+        android:text="GERİ"
+        app:layout_constraintBottom_toTopOf="@+id/Dur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ileri" />
+
+    <Button
+        android:id="@+id/ileri"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="115dp"
+        android:onClick="ileri"
+        android:text="İLERİ"
+        app:layout_constraintBottom_toTopOf="@+id/geri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sag"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="sag"
+        android:text="SAG"
+        app:layout_constraintBottom_toBottomOf="@+id/geri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sol"
+        app:layout_constraintTop_toTopOf="@+id/ileri" />
+
+    <Button
+        android:id="@+id/sol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="157dp"
+        android:onClick="sol"
+        android:text="SOL"
+        app:layout_constraintBottom_toBottomOf="@+id/sag"
+        app:layout_constraintEnd_toStartOf="@+id/sag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sag" />
+
+    <Button
+        android:id="@+id/Dur"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Dur"
+        android:text="DUR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geri" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
